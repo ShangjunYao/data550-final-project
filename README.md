@@ -27,7 +27,7 @@ Ensure you have R installed the following packages:
 ## How to Run the Project
 1. Clone the repository:
 In the bash:
-   git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+   git clone https://github.com/ShangjunYao/data550-final-project
    
 2. Navigate to the project directory:
 In the bash:
