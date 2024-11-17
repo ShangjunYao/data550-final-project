@@ -1,0 +1,2 @@
+"0","summary_stats <- readRDS(here(""output"", ""summary_stats.rds""))"
+"0","knitr::kable(summary_stats, caption = ""Summary Statistics of Maternal Health Dataset"")"
