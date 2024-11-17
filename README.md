@@ -36,8 +36,8 @@ In the bash:
 In the bash:
    make final_report.html
 
-Description of Scripts and Outputs
-Scripts
+# Description of Scripts and Outputs
+## Scripts
 --scripts/create_table1.R: Creates the summary statistics table.
 
 --scripts/create_table2.R: Generates the table of average physiological features by risk level.
@@ -47,20 +47,21 @@ Scripts
 --scripts/create_figure1.R: Generates the boxplot for age distribution by risk level.
 
 --scripts/create_figure2.R: Generates the boxplot for heart rate distribution by risk level.
-Outputs:
-*Tables*:
+
+# Outputs:
+## *Tables*:
 output/summary_stats.rds: Summary statistics table.
 
 output/risk_level_summary.rds: Table of average physiological features by risk level.
 
 output/heart_rate_distribution.rds: Heart rate distribution by risk level.
 
-*Figures*:
+## *Figures*:
 output/age_boxplot.png: Boxplot of age distribution by risk level.
 
 output/heart_rate_boxplot.png: Boxplot of heart rate distribution by risk level.
 
-How to Generate Each Table and Figure:
+# How to Generate Each Table and Figure:
 
 Table 1 (Summary Statistics): scripts/create_table1.R.
 
