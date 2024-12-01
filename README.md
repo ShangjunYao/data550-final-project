@@ -24,6 +24,16 @@ Ensure you have R installed the following packages:
 - `ggplot2`
 - `knitr`
 
+## Synchronizing the Package Environment
+
+To reproduce the package environment used for this project:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/username/repo-name.git
+   cd repo-name
+
+
 ## How to Run the Project
 1. Clone the repository:
 In the bash:

@@ -15,10 +15,13 @@ output/age_boxplot.png: scripts/create_figure1.R data/Maternal_Health_Risk_Data_
 	Rscript scripts/create_figure1.R
 
 output/heart_rate_boxplot.png: scripts/create_figure2.R data/Maternal_Health_Risk_Data_Set.csv
-	Rscript scripts/create_figure2.R
-
+	Rscript scripts/create_figure2.R 
+	
 .PHONY: descriptive_analysis
 descriptive_analysis: output/summary_stats.html output/risk_level_summary.rds output/heart_rate_distribution.rds output/age_boxplot.png output/heart_rate_boxplot.png
+
+install:
+	Rscript -e "renv::restore()"
 
 # Clean-up target to remove all generated files
 .PHONY: clean
