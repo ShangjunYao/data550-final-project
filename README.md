@@ -52,9 +52,6 @@ In the bash:
 In the bash:
    make final_report.html
 
-## How to clean the project
-```bash
-make clean
 
 # Description of Scripts and Outputs
 ## Scripts
