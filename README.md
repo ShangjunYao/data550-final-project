@@ -30,9 +30,15 @@ To reproduce the package environment used for this project:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/username/repo-name.git
-   cd repo-name
-
+   git clone https://github.com/ShangjunYao/data550-final-project
+   cd final_project
+2. restore the packages:
+   Option1:
+   ```bash
+   make install
+   Option2:
+   ```R
+   renv::restore
 
 ## How to Run the Project
 1. Clone the repository:
@@ -45,6 +51,10 @@ In the bash:
 3. Generate the Final Report:
 In the bash:
    make final_report.html
+
+## How to clean the project
+```bash
+make clean
 
 # Description of Scripts and Outputs
 ## Scripts
