@@ -18,17 +18,10 @@ library(ggplot2)
 library(dplyr)
 library(knitr)
 library(readr)
-library(kableExtra)
 library(here)
 data <- read_csv(here("data", "Maternal_Health_Risk_Data_Set.csv"))
 ```
 
-
-## Table1: Summary
-```{r summary_table, include=TRUE, echo=FALSE}
-summary_stats <- readRDS(here("output", "summary_stats.rds"))
-knitr::kable(summary_stats, caption = "Summary Statistics of Maternal Health Dataset")
-```
 
 
 ## Table2: Average Physiological Features by Risk Level

@@ -46,9 +46,30 @@ In the bash:
 In the bash:
    make final_report.html
 
+## Describe how to build the Docker image:
+To build the Docker image, run:
+```bash
+docker build --platform linux/amd64 -t shangjunyao/hiv_docker_project .
+
+## how to run the container and generate the report
+
+## Generate the Report
+To generate the report, ensure you have an empty `final_report` directory in your project folder. Then run:
+For Mac/Linux Users:
+```bash
+make final_report/final_report.html
+```
+For Windows Users (Using Git Bash):
+```bash
+make final_report/final_report.html
+```
+OR running the command manually without make
+```bash
+docker run -v /$(pwd)/final_report:/project/final_report shangjunyao/hiv_docker_project
+```
+
 # Description of Scripts and Outputs
 ## Scripts
---scripts/create_table1.R: Creates the summary statistics table.
 
 --scripts/create_table2.R: Generates the table of average physiological features by risk level.
 
@@ -60,7 +81,6 @@ In the bash:
 
 # Outputs:
 ## *Tables*:
-output/summary_stats.rds: Summary statistics table.
 
 output/risk_level_summary.rds: Table of average physiological features by risk level.
 
@@ -72,8 +92,6 @@ output/age_boxplot.png: Boxplot of age distribution by risk level.
 output/heart_rate_boxplot.png: Boxplot of heart rate distribution by risk level.
 
 # How to Generate Each Table and Figure:
-
-Table 1 (Summary Statistics): scripts/create_table1.R.
 
 Table 2 (Average Physiological Features by Risk Level):scripts/create_table2.R.
 
